@@ -32,7 +32,7 @@ export default function ForgotPassword() {
         <>
             <Card>
                 <Card.Body>
-                    <h2 className="text-center mb-4">Reset Sıfırlama</h2> 
+                    <h2 className="text-center mb-4">Şifre Sıfırlama</h2> 
                     {error && <Alert variant="danger"> {error}</Alert>}
                     {message && <Alert variant="success"> {message}</Alert>}
                     <Form onSubmit={handleSubmit}>
@@ -45,7 +45,7 @@ export default function ForgotPassword() {
                         <Button disabled={loading} className="w-100 btn-info" type="submit"> Şifremi Sıfırla </Button>
                     </Form>
                     <div className="w-100 text-center mt-3">
-                         <Link to="/login">Giriş</Link>
+                        <Link to="/login">Giriş Ekranına Dön</Link>
                     </div>
                 </Card.Body>
             </Card>

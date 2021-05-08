@@ -7,13 +7,14 @@ import UpdateProfile from "./components/UpdateProfile";
 import { AuthProvider } from "./contexts/AuthContext";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PrivateRoute from './components/PrivateRoute';
+import { Col } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="d-flex w-100 align-items-center justify-content-end pr-5 pt-5">
-          <div className="w-25">
+        <div className="d-flex w-100 align-items-center justify-content-end pt-5">
+          <Col xs={12} md={4} lg={3}>
             <Router>
               <AuthProvider>
                 <Switch> 
@@ -25,7 +26,7 @@ function App() {
                 </Switch> 
               </AuthProvider>
             </Router>
-          </div>
+          </Col>
         </div>
       </header>
     </div>

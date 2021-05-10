@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="d-flex w-100 align-items-center justify-content-end pt-5">
-          <Col xs={12} md={4} lg={3}>
+        <div className="d-flex w-100 align-items-center justify-content-center pt-5">
+          <Col xs={12} md={6} lg={5}>
             <Router>
               <AuthProvider>
                 <Switch> 
